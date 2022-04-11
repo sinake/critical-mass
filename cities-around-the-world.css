@@ -1,0 +1,63 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1vw;
+}
+
+nav {
+  margin-bottom: 2em;
+}
+
+.cities-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  width: 90%;
+  margin: 100px auto 0 auto;
+  padding: 0 20px 10px 20px;
+  color: #bbb;
+  font-size: 2em;
+  font-weight: 300;
+  border-bottom: 1px solid #bbb;
+  position: relative;
+}
+
+.city:hover {
+  cursor: pointer;
+  color: #8dbce0;
+}
+
+.selected, .selected:hover {
+  color: #000;
+  cursor: default;
+}
+
+.underline {
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: -3%;
+  left: 0;
+  transition: 0.5s ease;
+}
+
+main {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.city-time {
+  font-size: 3em;
+}
+
+@media only screen and (min-width: 640px) {
+  .cities-list {
+    font-size: 12px;
+  }
+}
